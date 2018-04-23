@@ -1,6 +1,6 @@
-const outputPrint = require("./outputPrint.js");
+const outputPrint = require('./outputPrint.js');
 
-console.log("Hello nodejs world");
+console.log('Hello nodejs world');
 
-var test = new outputPrint();
-console.log( test.print("something"));
+const test = new outputPrint();
+console.log( test.printTextBelowNumbers('something really long'));
