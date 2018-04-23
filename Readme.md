@@ -1,0 +1,1 @@
+This is trivial password encrypter. Used when You want to print something on the paper but using trivial algorithm so You can descrypt it just by looking at it.
