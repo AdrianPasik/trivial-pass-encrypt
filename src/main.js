@@ -1,4 +1,5 @@
 const outputPrint = require('./outputPrint.js');
+const encryptor = require('./swapCharEncrypt.js');
 
 console.log('Hello nodejs world');
 
