@@ -2,5 +2,11 @@
   "scripts": {
     "test": "jest"
   },
-  "dependencies": {}
+  "jest": {
+    "verbose": true
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^22.0.0"
+  }
 }
