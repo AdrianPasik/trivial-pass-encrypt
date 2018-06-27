@@ -9,4 +9,4 @@ console.log( test.printTextBelowNumbers('something really long'));
 console.log( encryptModule.encrypt({
     numberOffset: 1,
     textOffset: 1
-},"abc"));
+},"aAa"));

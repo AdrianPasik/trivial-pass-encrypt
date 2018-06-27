@@ -13,14 +13,15 @@ class SwapCharEncrypt {
         };
 
         for(let singleChar of text) {
+            
             if(Number.isInteger(singleChar)) {
                 encryptedText += getChar(numbers, singleChar, config.numberOffset);
             }
-            if(singleChar.match(/[a-z][A-Z]/i)){
+            if(singleChar.match(/[a-z]|[A-Z]/i)){
                 encryptedText += getChar(letters, singleChar, config.textOffset);
             }
         }
-
+        
         return encryptedText;
     }
 }
