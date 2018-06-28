@@ -7,16 +7,16 @@ class SwapCharEncrypt {
 
         const getChar = function(table, singleCharacter, offset) {
             let index = table.indexOf(singleCharacter) + offset;
-            while(index > numbers.length) {
-                index -= numbers.length;
+            while(index >= table.length) {
+                index -= table.length;
             }
             return table[index];
         };
 
         for(let singleChar of text) {
-            console.log(singleChar);
-            if(Number.isInteger(singleChar)) {
+            if(Number.isInteger(parseInt(singleChar))) {
                 encryptedText += getChar(numbers, singleChar, config.numberOffset);
+                continue;
             }
             if(singleChar.match(/[a-z]/i)){
                 if(singleChar == singleChar.toUpperCase()) {

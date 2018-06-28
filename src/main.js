@@ -7,6 +7,6 @@ const test = new outputPrintModule();
 console.log( test.printTextBelowNumbers('something really long'));
 //const anotherTest = new encrypt();
 console.log( encryptModule.encrypt({
-    numberOffset: 1,
+    numberOffset: 9,
     textOffset: 1
-},"aAa"));
+},"1"));
