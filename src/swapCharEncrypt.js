@@ -2,7 +2,7 @@ class SwapCharEncrypt {
     static encrypt(config, text) {
         let encryptedText = '';
         const letters = [...'abcdefghijklmnoprstuwxyz'];
-        const upperLetters = [...'ABCDEFGHIJKLMNOPRSUWXYZ'];
+        const upperLetters = [...'ABCDEFGHIJKLMNOPRSTUWXYZ'];
         const numbers = [...'0123456789'];
 
         const getChar = function(table, singleCharacter, offset) {
