@@ -12,3 +12,8 @@ test ('Should work correctly on primitive data', () => {
     expect(encryptModule.encrypt({ numberOffset: 9, textOffset: 0 },"1")).toBe("0");
     expect(encryptModule.encrypt({ numberOffset: 10, textOffset: 0 },"1")).toBe("1");
 });
+
+test('Should work correctly on combined numbers and letters', () => {
+    expect(encryptModule.encrypt({ numberOffset: 1, textOffset: 1 },"a1B")).toBe("b2C");
+    expect(encryptModule.encrypt({ numberOffset: -2, textOffset: -2 },"a1B")).toBe("y9Z");
+});

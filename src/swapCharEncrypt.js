@@ -10,6 +10,9 @@ class SwapCharEncrypt {
             while(index >= table.length) {
                 index -= table.length;
             }
+            while(index < 0) {
+                index += table.length;
+            }
             return table[index];
         };
 
