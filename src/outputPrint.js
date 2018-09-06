@@ -1,9 +1,5 @@
 class OutputPrint {
-    print(text) {
-        return text + "test";
-    }
-
-    printTextBelowNumbers(text) {
+    static printTextWithIndexes(text) {
         const indent = ' ';
         let textToPrint = '';
         for(let i = 0; i < text.length; i++) {

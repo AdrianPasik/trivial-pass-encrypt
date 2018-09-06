@@ -1,10 +1,7 @@
-const outputPrintModule = require('./outputPrint.js');
+const output = require('./outputPrint.js');
 const encryptModule = require('./swapCharEncrypt.js');
 
-console.log('Hello nodejs world');
-
-const test = new outputPrintModule();
-console.log( test.printTextBelowNumbers('something really long'));
+console.log( output.printTextWithIndexes('something really long'));
 //const anotherTest = new encrypt();
 console.log( encryptModule.encrypt({
     numberOffset: 9,
