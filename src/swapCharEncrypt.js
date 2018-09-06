@@ -34,6 +34,11 @@ class SwapCharEncrypt {
         
         return encryptedText;
     }
+    static decrypt(config, text) {
+        config.numberOffset *= -1;
+        config.textOffset *= -1;
+        return this.encrypt(config, text);
+    }
 }
 
 module.exports = SwapCharEncrypt;
