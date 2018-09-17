@@ -1,4 +1,4 @@
-class SwapCharEncrypt {
+class OffsetCharEncrypt {
     static encrypt(config, text) {
         let encryptedText = '';
         const letters = [...'abcdefghijklmnoprstuwxyz'];
@@ -41,4 +41,4 @@ class SwapCharEncrypt {
     }
 }
 
-module.exports = SwapCharEncrypt;
+module.exports = OffsetCharEncrypt;

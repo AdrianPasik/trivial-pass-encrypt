@@ -1,6 +1,6 @@
-const output = require('./outputPrint.js');
-const encryptModule = require('./swapCharEncrypt.js');
-const shuffleModule = require('./shuffleCharEncrypt.js');
+const output = require('./outputPrint');
+const encryptModule = require('./offsetCharEncrypt');
+const shuffleModule = require('./shuffleCharEncrypt');
 
 console.log( output.printTextWithIndexes('something really long'));
 console.log( encryptModule.encrypt({
