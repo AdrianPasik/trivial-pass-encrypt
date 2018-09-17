@@ -26,7 +26,7 @@ class ShuffleCharEncrypt {
     }
 
     static decrypt(config, text) {
-
+        return this.encrypt(config, text);
     }
 }
 
