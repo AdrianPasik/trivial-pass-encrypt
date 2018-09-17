@@ -11,4 +11,7 @@ test ('Should work correctly on primitive data', () => {
     expect(encryptModule.encrypt({ ShuffleOffset: 0 },"abcd")).toBe("abcd");
     expect(encryptModule.encrypt({ ShuffleOffset: 1 },"abcd")).toBe("badc");
     expect(encryptModule.encrypt({ ShuffleOffset: 2 },"abcd")).toBe("cdab");
+    expect(encryptModule.encrypt({ ShuffleOffset: 3 },"abcd")).toBe("dbca");
+    expect(encryptModule.encrypt({ ShuffleOffset: 4 },"abcd")).toBe("abcd");
+    expect(encryptModule.encrypt({ ShuffleOffset: 4 },"abcd")).toBe("abcd");
 });

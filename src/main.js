@@ -9,5 +9,5 @@ console.log( encryptModule.encrypt({
 },"1"));
 
 console.log(shuffleModule.encrypt({
-    ShuffleOffset: 2
-}, "abc"));
+    ShuffleOffset: 3
+}, "abcd"));
